@@ -376,9 +376,6 @@ namespace DBCreator
             dataGridView1.Rows.Insert(1, ListLines[7]);
             dataGridView1.Rows.Insert(1, ListLines[8]);
             dataGridView1.Rows.Insert(1, ListLines[9]);
-            //button1.Text = "Create a '" + label3.Text + "' folder.";
-            //button2.Text = "Save to '" + label3.Text + "' folder.";
-            //button1.Enabled = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -409,6 +406,292 @@ namespace DBCreator
             file.InitialDirectory = Directory.GetCurrentDirectory();
             file.ShowDialog();
             pictureBox2.ImageLocation = file.FileName;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (oneClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\one\\");
+                pictureBox1.Image.Save(Directory.GetCurrentDirectory() + "\\one\\load1.png");
+            }
+            if (twoClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\two\\");
+                pictureBox1.Image.Save(Directory.GetCurrentDirectory() + "\\two\\load1.png");
+            }
+            if (threeClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\three\\");
+                pictureBox1.Image.Save(Directory.GetCurrentDirectory() + "\\three\\load1.png");
+            }
+            if (fourClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\four");
+                pictureBox1.Image.Save(Directory.GetCurrentDirectory() + "\\four\\load1.png");
+            }
+            if (fiveClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\five\\");
+                pictureBox1.Image.Save(Directory.GetCurrentDirectory() + "\\five\\load1.png");
+            }
+            if (sixClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\six\\");
+                pictureBox1.Image.Save(Directory.GetCurrentDirectory() + "\\six\\load1.png");
+            }
+            if (sevenClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\seven\\");
+                pictureBox1.Image.Save(Directory.GetCurrentDirectory() + "\\seven\\load1.png");
+            }
+            if (eightClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\eight\\");
+                pictureBox1.Image.Save(Directory.GetCurrentDirectory() + "\\eight\\load1.png");
+            }
+            if (nineClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\nine\\");
+                pictureBox1.Image.Save(Directory.GetCurrentDirectory() + "\\nine\\load1.png");
+            }
+            if (tenClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\ten\\");
+                pictureBox1.Image.Save(Directory.GetCurrentDirectory() + "\\ten\\load1.png");
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (oneExists && File.Exists(Directory.GetCurrentDirectory() + "\\one\\" + "load1.png") && oneClicked)
+            {
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\one\\" + "load1.png";
+                if (File.Exists(Directory.GetCurrentDirectory() + "\\one\\" + "load2.png"))
+                {
+                    pictureBox2.ImageLocation = Directory.GetCurrentDirectory() + "\\one\\" + "load2.png";
+                    if (File.Exists(Directory.GetCurrentDirectory() + "\\one\\" + "load3.png"))
+                    {
+                        pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\one\\" + "load3.png";
+                    }
+                }
+            }
+            if (twoExists && File.Exists(Directory.GetCurrentDirectory() + "\\two\\" + "load1.png") && twoClicked)
+            {
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\two\\" + "load1.png";
+                if (File.Exists(Directory.GetCurrentDirectory() + "\\two\\" + "load2.png"))
+                {
+                    pictureBox2.ImageLocation = Directory.GetCurrentDirectory() + "\\two\\" + "load2.png";
+                    if (File.Exists(Directory.GetCurrentDirectory() + "\\two\\" + "load3.png"))
+                    {
+                        pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\two\\" + "load3.png";
+                    }
+                }
+            }
+            if (threeExists && File.Exists(Directory.GetCurrentDirectory() + "\\three\\" + "load1.png") && threeClicked)
+            {
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\three\\" + "load1.png";
+                if (File.Exists(Directory.GetCurrentDirectory() + "\\three\\" + "load2.png"))
+                {
+                    pictureBox2.ImageLocation = Directory.GetCurrentDirectory() + "\\three\\" + "load2.png";
+                    if (File.Exists(Directory.GetCurrentDirectory() + "\\three\\" + "load3.png"))
+                    {
+                        pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\three\\" + "load3.png";
+                    }
+                }
+            }
+            if (fourExists && File.Exists(Directory.GetCurrentDirectory() + "\\four\\" + "load1.png") && fourClicked)
+            {
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\four\\" + "load1.png";
+                if (File.Exists(Directory.GetCurrentDirectory() + "\\four\\" + "load2.png"))
+                {
+                    pictureBox2.ImageLocation = Directory.GetCurrentDirectory() + "\\four\\" + "load2.png";
+                    if (File.Exists(Directory.GetCurrentDirectory() + "\\four\\" + "load3.png"))
+                    {
+                        pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\four\\" + "load3.png";
+                    }
+                }
+            }
+            if (fiveExists && File.Exists(Directory.GetCurrentDirectory() + "\\five\\" + "load1.png") && fiveClicked)
+            {
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\five\\" + "load1.png";
+                if (File.Exists(Directory.GetCurrentDirectory() + "\\five\\" + "load2.png"))
+                {
+                    pictureBox2.ImageLocation = Directory.GetCurrentDirectory() + "\\five\\" + "load2.png";
+                    if (File.Exists(Directory.GetCurrentDirectory() + "\\five\\" + "load3.png"))
+                    {
+                        pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\five\\" + "load3.png";
+                    }
+                }
+            }
+            if (sixExists && File.Exists(Directory.GetCurrentDirectory() + "\\six\\" + "load1.png") && sixClicked)
+            {
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\six\\" + "load1.png";
+                if (File.Exists(Directory.GetCurrentDirectory() + "\\six\\" + "load2.png"))
+                {
+                    pictureBox2.ImageLocation = Directory.GetCurrentDirectory() + "\\six\\" + "load2.png";
+                    if (File.Exists(Directory.GetCurrentDirectory() + "\\six\\" + "load3.png"))
+                    {
+                        pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\six\\" + "load3.png";
+                    }
+                }
+            }
+            if (sevenExists && File.Exists(Directory.GetCurrentDirectory() + "\\seven\\" + "load1.png") && sevenClicked)
+            {
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\seven\\" + "load1.png";
+                if (File.Exists(Directory.GetCurrentDirectory() + "\\seven\\" + "load2.png"))
+                {
+                    pictureBox2.ImageLocation = Directory.GetCurrentDirectory() + "\\seven\\" + "load2.png";
+                    if (File.Exists(Directory.GetCurrentDirectory() + "\\seven\\" + "load3.png"))
+                    {
+                        pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\seven\\" + "load3.png";
+                    }
+                }
+            }
+            if (eightExists && File.Exists(Directory.GetCurrentDirectory() + "\\eight\\" + "load1.png") && eightClicked)
+            {
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\eight\\" + "load1.png";
+                if (File.Exists(Directory.GetCurrentDirectory() + "\\eight\\" + "load2.png"))
+                {
+                    pictureBox2.ImageLocation = Directory.GetCurrentDirectory() + "\\eight\\" + "load2.png";
+                    if (File.Exists(Directory.GetCurrentDirectory() + "\\eight\\" + "load3.png"))
+                    {
+                        pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\eight\\" + "load3.png";
+                    }
+                }
+            }
+            if (nineExists && File.Exists(Directory.GetCurrentDirectory() + "\\nine\\" + "load1.png") && nineClicked)
+            {
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\nine\\" + "load1.png";
+                if (File.Exists(Directory.GetCurrentDirectory() + "\\nine\\" + "load2.png"))
+                {
+                    pictureBox2.ImageLocation = Directory.GetCurrentDirectory() + "\\nine\\" + "load2.png";
+                    if (File.Exists(Directory.GetCurrentDirectory() + "\\nine\\" + "load3.png"))
+                    {
+                        pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\nine\\" + "load3.png";
+                    }
+                }
+            }
+            if (tenExists && File.Exists(Directory.GetCurrentDirectory() + "\\ten\\" + "load1.png") && tenClicked)
+            {
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\ten\\" + "load1.png";
+                if (File.Exists(Directory.GetCurrentDirectory() + "\\ten\\" + "load2.png"))
+                {
+                    pictureBox2.ImageLocation = Directory.GetCurrentDirectory() + "\\ten\\" + "load2.png";
+                    if (File.Exists(Directory.GetCurrentDirectory() + "\\ten\\" + "load3.png"))
+                    {
+                        pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\ten\\" + "load3.png";
+                    }
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (oneClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\one\\");
+                pictureBox2.Image.Save(Directory.GetCurrentDirectory() + "\\one\\load2.png");
+            }
+            if (twoClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\two\\");
+                pictureBox2.Image.Save(Directory.GetCurrentDirectory() + "\\two\\load2.png");
+            }
+            if (threeClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\three\\");
+                pictureBox2.Image.Save(Directory.GetCurrentDirectory() + "\\three\\load2.png");
+            }
+            if (fourClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\four");
+                pictureBox2.Image.Save(Directory.GetCurrentDirectory() + "\\four\\load2.png");
+            }
+            if (fiveClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\five\\");
+                pictureBox2.Image.Save(Directory.GetCurrentDirectory() + "\\five\\load2.png");
+            }
+            if (sixClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\six\\");
+                pictureBox2.Image.Save(Directory.GetCurrentDirectory() + "\\six\\load2.png");
+            }
+            if (sevenClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\seven\\");
+                pictureBox2.Image.Save(Directory.GetCurrentDirectory() + "\\seven\\load2.png");
+            }
+            if (eightClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\eight\\");
+                pictureBox2.Image.Save(Directory.GetCurrentDirectory() + "\\eight\\load2.png");
+            }
+            if (nineClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\nine\\");
+                pictureBox2.Image.Save(Directory.GetCurrentDirectory() + "\\nine\\load2.png");
+            }
+            if (tenClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\ten\\");
+                pictureBox2.Image.Save(Directory.GetCurrentDirectory() + "\\ten\\load2.png");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (oneClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\one\\");
+                pictureBox3.Image.Save(Directory.GetCurrentDirectory() + "\\one\\load3.png");
+            }
+            if (twoClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\two\\");
+                pictureBox3.Image.Save(Directory.GetCurrentDirectory() + "\\two\\load3.png");
+            }
+            if (threeClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\three\\");
+                pictureBox3.Image.Save(Directory.GetCurrentDirectory() + "\\three\\load3.png");
+            }
+            if (fourClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\four");
+                pictureBox3.Image.Save(Directory.GetCurrentDirectory() + "\\four\\load3.png");
+            }
+            if (fiveClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\five\\");
+                pictureBox3.Image.Save(Directory.GetCurrentDirectory() + "\\five\\load3.png");
+            }
+            if (sixClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\six\\");
+                pictureBox3.Image.Save(Directory.GetCurrentDirectory() + "\\six\\load3.png");
+            }
+            if (sevenClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\seven\\");
+                pictureBox3.Image.Save(Directory.GetCurrentDirectory() + "\\seven\\load3.png");
+            }
+            if (eightClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\eight\\");
+                pictureBox1.Image.Save(Directory.GetCurrentDirectory() + "\\eight\\load3.png");
+            }
+            if (nineClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\nine\\");
+                pictureBox1.Image.Save(Directory.GetCurrentDirectory() + "\\nine\\load3.png");
+            }
+            if (tenClicked)
+            {
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\ten\\");
+                pictureBox3.Image.Save(Directory.GetCurrentDirectory() + "\\ten\\load3.png");
+            }
         }
     }
 }
