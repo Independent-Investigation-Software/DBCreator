@@ -405,45 +405,45 @@ namespace DBCreator
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            if (oneExists && File.Exists(Directory.GetCurrentDirectory() + "\\one\\" + "load.png"))
+            if (oneExists && File.Exists(Directory.GetCurrentDirectory() + "\\one\\" + "load.png") && oneClicked)
             {
-                pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\one\\" + "load.png";
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\one\\" + "load.png";
             }
-            if (twoExists && File.Exists(Directory.GetCurrentDirectory() + "\\two\\" + "load.png"))
+            if (twoExists && File.Exists(Directory.GetCurrentDirectory() + "\\two\\" + "load.png") && twoClicked)
             {
-                pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\two\\" + "load.png";
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\two\\" + "load.png";
             }
-            if (threeExists && File.Exists(Directory.GetCurrentDirectory() + "\\three\\" + "load.png"))
+            if (threeExists && File.Exists(Directory.GetCurrentDirectory() + "\\three\\" + "load.png") && threeClicked)
             {
-                pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\three\\" + "load.png";
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\three\\" + "load.png";
             }
-            if (fourExists && File.Exists(Directory.GetCurrentDirectory() + "\\four\\" + "load.png"))
+            if (fourExists && File.Exists(Directory.GetCurrentDirectory() + "\\four\\" + "load.png") && fourClicked)
             {
-                pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\four\\" + "load.png";
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\four\\" + "load.png";
             }
-            if (fiveExists && File.Exists(Directory.GetCurrentDirectory() + "\\five\\" + "load.png"))
+            if (fiveExists && File.Exists(Directory.GetCurrentDirectory() + "\\five\\" + "load.png") && fiveClicked)
             {
-                pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\five\\" + "load.png";
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\five\\" + "load.png";
             }
-            if (sixExists && File.Exists(Directory.GetCurrentDirectory() + "\\six\\" + "load.png"))
+            if (sixExists && File.Exists(Directory.GetCurrentDirectory() + "\\six\\" + "load.png") && sixClicked)
             {
-                pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\six\\" + "load.png";
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\six\\" + "load.png";
             }
-            if (sevenExists && File.Exists(Directory.GetCurrentDirectory() + "\\seven\\" + "load.png"))
+            if (sevenExists && File.Exists(Directory.GetCurrentDirectory() + "\\seven\\" + "load.png") && sevenClicked)
             {
-                pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\seven\\" + "load.png";
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\seven\\" + "load.png";
             }
-            if (eightExists && File.Exists(Directory.GetCurrentDirectory() + "\\eight\\" + "load.png"))
+            if (eightExists && File.Exists(Directory.GetCurrentDirectory() + "\\eight\\" + "load.png") && eightClicked)
             {
-                pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\eight\\" + "load.png";
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\eight\\" + "load.png";
             }
-            if (nineExists && File.Exists(Directory.GetCurrentDirectory() + "\\nine\\" + "load.png"))
+            if (nineExists && File.Exists(Directory.GetCurrentDirectory() + "\\nine\\" + "load.png") && nineClicked)
             {
-                pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\nine\\" + "load.png";
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\nine\\" + "load.png";
             }
-            if (tenExists && File.Exists(Directory.GetCurrentDirectory() + "\\ten\\" + "load.png"))
+            if (tenExists && File.Exists(Directory.GetCurrentDirectory() + "\\ten\\" + "load.png") && tenClicked)
             {
-                pictureBox3.ImageLocation = Directory.GetCurrentDirectory() + "\\ten\\" + "load.png";
+                pictureBox1.ImageLocation = Directory.GetCurrentDirectory() + "\\ten\\" + "load.png";
             }
         }
 
@@ -508,10 +508,6 @@ namespace DBCreator
             {
                 Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\ten\\");
                 pictureBox1.Image.Save(Directory.GetCurrentDirectory() + "\\ten\\load.png");
-            }
-            else
-            {
-                MessageBox.Show("Please select a POI before saving image.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
